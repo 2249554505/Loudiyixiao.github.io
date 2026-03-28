@@ -48,6 +48,16 @@ body{font-family:"Microsoft YaHei",sans-serif;color:#333}
     为社会输送了大批优秀艺术人才与技术技能型人才，是湘中地区艺术职业教育的重要阵地。
   </p>
 </div>
+<div id="content"></div>
 
+<script>
+fetch('update.md')
+  .then(res => res.text())
+  .then(text => {
+    document.getElementById('content').innerHTML = 
+      text.replace(/^# (.*)/gm, '<h1>$1</h1>')
+          .replace(/\n/g, '<br>');
+  })
+</script>
 </body>
 </html>
