@@ -1,1 +1,31 @@
-dasdsdd
+# .pages.yml 最简配置（直接复制可用）
+site:
+  title: 我的网站
+  media: assets/images  # 图片上传到哪个文件夹
+
+# 内容集合（比如：博客文章）
+content:
+  - name: blog
+    label: 博客
+    path: src/content/blog  # 文章.md文件存在哪
+    filename: "{year}-{month}-{day}-{title}.md"  # 文件名规则
+    type: collection
+    view:
+      fields: [title, pubDate, heroImage]  # 列表显示哪些字段
+    fields:  # 编辑页有哪些输入框
+      - name: title
+        label: 标题
+        type: string
+        required: true
+
+      - name: pubDate
+        label: 发布日期
+        type: date
+
+      - name: heroImage
+        label: 封面图
+        type: image
+
+      - name: body
+        label: 内容
+        type: markdown
