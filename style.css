@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+  background: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 头部 */
+header {
+  background: #1e40af;
+  color: #fff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.domain {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* 导航 */
+nav {
+  background: #3b82f6;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  padding: 14px 20px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* 主体容器 */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+/* 横幅 */
+.banner {
+  height: 180px;
+  background: #dbeafe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #1e40af;
+  margin-bottom: 24px;
+}
+
+/* 卡片 */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+  color: #1e40af;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.card p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.major-list {
+  list-style: none;
+}
+
+.major-list li {
+  padding: 6px 0;
+  font-size: 15px;
+}
+
+/* 底部 */
+footer {
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
