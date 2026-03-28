@@ -1,12 +1,13 @@
 # .pages.yml 最简配置（直接复制可用）
 site:
-  title: 我的网站
+  title: 2249554505.github.io
   media: assets/images  # 图片上传到哪个文件夹
 
 # 内容集合（比如：博客文章）
 content:
   - name: blog
-    label: 博客
+    label: 首页内容
+  
     path: src/content/blog  # 文章.md文件存在哪
     filename: "{year}-{month}-{day}-{title}.md"  # 文件名规则
     type: collection
